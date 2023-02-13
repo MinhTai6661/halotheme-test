@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/libraries/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/libraries/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+        />
+        <link rel="stylesheet" href="./assets/font/font-myriad-pro/MYRIADPRO-REGULAR.OTF" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <!-- <div class="header__text-slide">textslide</div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div
+                            class="header__top__left d-flex justify-content-center justify-content-md-start"
+                        >
+                            <h1 class="header__top__logo">ella</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="header__top__right d-flex justify-content-center justify-content-lg-end flex-column"
+                        >
+                            <span class="header__top__right-free text-center text-lg-end"
+                                >Free shipping on All Orders. No Minimum Purchase</span
+                            >
+                            <nav
+                                class="header__top__right-nav d-flex justify-content-center justify-content-lg-end"
+                            >
+                                <a href="#" class="header__top__right-link">
+                                    <span class="header__top__right-icon">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="15px"
+                                            height="20px"
+                                        >
+                                            <image
+                                                x="0px"
+                                                y="0px"
+                                                width="15px"
+                                                height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAQAAAD4zq+ZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAg0LEA13GYsqAAAAzklEQVQoz9XQrUoEYRjF8d87OtgETbJFYYKYvIANYpy1WcQgXoBg2uhmq16AH+A9LO8Ew4I2DQbvYJMIegHurGGdV4Nj96TD+XMeDk8oJO05s+Jd30UTzS037siloNKxb2o0C0NqTw3tgGuHQtPObVt3YMuNiQ0dtZ4FuTUvobjT1aanTNe90ilOlEqlAQZKQ5sZnkUjVKIoqhBFj2RYxIexOo0cy7HE/Fd0azXhh2+fpRn1j0nJZ/7U/8ZvLex19rVdk19xj1CcO269ffUJbqkvFe1PEuwAAAAASUVORK5CYII="
+                                            />
+                                        </svg>
+                                    </span>
+                                    Shopping Cart
+                                    <span class="header__top__right-quantity">0</span>
+                                </a>
+                                <a href="#" class="header__top__right-link">
+                                    <span class="header__top__right-icon">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="15px"
+                                            height="20px"
+                                        >
+                                            <image
+                                                x="0px"
+                                                y="0px"
+                                                width="15px"
+                                                height="20px"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAQAAAD4zq+ZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAg0LEA13GYsqAAAAzklEQVQoz9XQrUoEYRjF8d87OtgETbJFYYKYvIANYpy1WcQgXoBg2uhmq16AH+A9LO8Ew4I2DQbvYJMIegHurGGdV4Nj96TD+XMeDk8oJO05s+Jd30UTzS037siloNKxb2o0C0NqTw3tgGuHQtPObVt3YMuNiQ0dtZ4FuTUvobjT1aanTNe90ilOlEqlAQZKQ5sZnkUjVKIoqhBFj2RYxIexOo0cy7HE/Fd0azXhh2+fpRn1j0nJZ/7U/8ZvLex19rVdk19xj1CcO269ffUJbqkvFe1PEuwAAAAASUVORK5CYII="
+                                            />
+                                        </svg>
+                                    </span>
+                                    My Wish Lists
+                                </a>
+                                <a href="#" class="header__top__right-link">
+                                    Sign In or Create an account
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__icon"></div>
+            <aside class="sidebar">
+                <span class="sidebar__close"> &times; </span>
+                <nav class="sidebar__nav">
+                    <a class="sidebar__link" href="#"> NEW IN </a>
+                    <a class="sidebar__link" href="#"> TREND</a>
+                    <a class="sidebar__link" href="#"> COLLECTIONS </a>
+                    <a class="sidebar__link" href="#"> LOOKBOOK </a>
+                    <a class="sidebar__link" href="#"> DEMO </a>
+                    <a class="sidebar__link" href="#"> SHOP INSTAGRAM </a>
+                    <a class="sidebar__link" href="#"> BLOG </a>
+                    <a class="sidebar__link" href="#"> BRANDS </a>
+                    <a class="sidebar__link" href="#"> FAGS </a>
+                </nav>
+            </aside>
+            <div class="header__bottom d-sm-none d-md-block">
+                <div class="container">
+                    <nav class="header__bottom-nav">
+                        <a class="header__bottom-link" href="#"> NEW IN </a>
+                        <a class="header__bottom-link" href="#"> TREND</a>
+                        <a class="header__bottom-link" href="#"> COLLECTIONS </a>
+                        <a class="header__bottom-link" href="#"> LOOKBOOK </a>
+                        <a class="header__bottom-link" href="#"> DEMO </a>
+                        <a class="header__bottom-link" href="#"> SHOP INSTAGRAM </a>
+                        <a class="header__bottom-link" href="#"> BLOG </a>
+                        <a class="header__bottom-link" href="#"> BRANDS </a>
+                        <a class="header__bottom-link" href="#"> FAGS </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="main__banner">
+                <img src="./assets/images/banner/main-banner.jpg" alt="" />
+                <div class="main__banner-content">
+                    <div class="container">
+                        <div class="main__banner-inner">
+                            <h4 class="main__banner-title underline--title">Cosmopolisa</h4>
+                            <div class="main__banner-text">
+                                Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
+                                lacus meleifend menean diverra loremous.
+                            </div>
+                            <span class="main__banner-btn">
+                                <button class="btn btn-fill">shop now</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="main__categories">
+                <div class="container">
+                    <div class="row g-2 g-md-5">
+                        <div class="col-12 col-lg-4">
+                            <div class="main__categories-item">
+                                <a href="#">
+                                    <img
+                                        class="main__categories-thumbnail"
+                                        src="./assets/images/categories/edittors-pick.jpg"
+                                        alt="img"
+                                    />
+                                    <span class="main__categories-content underline"
+                                        >Editor’s Pick</span
+                                    >
+                                    <div class="main__categories-item-overlay"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="main__categories-item">
+                                <a href="#">
+                                    <img
+                                        class="main__categories-thumbnail"
+                                        src="./assets/images/categories/edittors-pick.jpg"
+                                        alt="img"
+                                    />
+                                    <span class="main__categories-content underline"
+                                        >Editor’s Pick</span
+                                    >
+                                    <div class="main__categories-item-overlay"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="main__categories-item">
+                                <a href="#">
+                                    <img
+                                        class="main__categories-thumbnail"
+                                        src="./assets/images/categories/edittors-pick.jpg"
+                                        alt="img"
+                                    />
+                                    <span class="main__categories-content underline"
+                                        >Editor’s Pick</span
+                                    >
+                                    <div class="main__categories-item-overlay"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="arrivals">
+                <div class="container">
+                    <div class="arrivals__header">
+                        <div class="arrivals__line"></div>
+                        <h2 class="arrivals__title title-dark title-md title">new arrivals</h2>
+                    </div>
+
+                    <div class="arrivals__view-all">View all</div>
+
+                    <div class="arrivals__main">
+                        <ul class="row g-3 g-md-5">
+                            <div class="col col-12 col-md-6 col-lg-3">
+                                <div class="arrivals__item">
+                                    <a href="#" class="arrivals__item-link">
+                                        <div class="arrivals__item-thumbnail">
+                                            <img
+                                                class="arrivals-item-img"
+                                                src="./assets/images/products/product-1.jpg"
+                                                alt="product-1"
+                                            />
+                                            <div class="arrivals__item-overlay">
+                                                <button class="btn btn-outline">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="arrivals__item-body">
+                                            <span class="arrivals__item-status">sodling</span>
+                                            <h4 class="arrivals__item-name">
+                                                Naminos Dementus A Milance - Pattern
+                                            </h4>
+                                            <span class="arrivals__item-price"
+                                                >$86.00 - $99.00</span
+                                            >
+                                            <div class="arrivals__item-colors">
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner blue"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner red"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner yellow"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 col-lg-3">
+                                <div class="arrivals__item">
+                                    <a href="#" class="arrivals__item-link">
+                                        <div class="arrivals__item-thumbnail">
+                                            <img
+                                                class="arrivals-item-img"
+                                                src="./assets/images/products/product-1.jpg"
+                                                alt="product-1"
+                                            />
+                                            <div class="arrivals__item-overlay">
+                                                <button class="btn btn-outline">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="arrivals__item-body">
+                                            <span class="arrivals__item-status">sodling</span>
+                                            <h4 class="arrivals__item-name">
+                                                Naminos Dementus A Milance - Pattern
+                                            </h4>
+                                            <span class="arrivals__item-price"
+                                                >$86.00 - $99.00</span
+                                            >
+                                            <div class="arrivals__item-colors">
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner blue"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner red"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner yellow"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 col-lg-3">
+                                <div class="arrivals__item">
+                                    <a href="#" class="arrivals__item-link">
+                                        <div class="arrivals__item-thumbnail">
+                                            <img
+                                                class="arrivals-item-img"
+                                                src="./assets/images/products/product-1.jpg"
+                                                alt="product-1"
+                                            />
+                                            <div class="arrivals__item-overlay">
+                                                <button class="btn btn-outline">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="arrivals__item-body">
+                                            <span class="arrivals__item-status">sodling</span>
+                                            <h4 class="arrivals__item-name">
+                                                Naminos Dementus A Milance - Pattern
+                                            </h4>
+                                            <span class="arrivals__item-price"
+                                                >$86.00 - $99.00</span
+                                            >
+                                            <div class="arrivals__item-colors">
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner blue"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner red"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner yellow"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 col-lg-3">
+                                <div class="arrivals__item">
+                                    <a href="#" class="arrivals__item-link">
+                                        <div class="arrivals__item-thumbnail">
+                                            <img
+                                                class="arrivals-item-img"
+                                                src="./assets/images/products/product-1.jpg"
+                                                alt="product-1"
+                                            />
+                                            <div class="arrivals__item-overlay">
+                                                <button class="btn btn-outline">ADD TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="arrivals__item-body">
+                                            <span class="arrivals__item-status">sodling</span>
+                                            <h4 class="arrivals__item-name">
+                                                Naminos Dementus A Milance - Pattern
+                                            </h4>
+                                            <span class="arrivals__item-price"
+                                                >$86.00 - $99.00</span
+                                            >
+                                            <div class="arrivals__item-colors">
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner blue"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner red"></span>
+                                                </div>
+                                                <div class="pick-color">
+                                                    <span class="pick-color-inner yellow"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+
+                        <div class="arrivals__show-more">
+                            <button class="btn btn-outline">show more</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="instagram">
+                <div class="container">
+                    <div class="instagram__heading">
+                        <div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="22px"
+                                height="22px"
+                            >
+                                <image
+                                    x="0px"
+                                    y="0px"
+                                    width="22px"
+                                    height="22px"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAg0RIgoVvGxeAAABmklEQVQoz4XTPWiTURTG8V8ag1rrVyIFUUFRcRArHSwdBKFLQaHiInQr+Im4KOhaaJeuDkJVEHTyC+kkDuoiLqLiIB2KWhHRGNOlaOJXchySJm+Kxuds5/nf99x7n/um1LTBSYM2WqKqqQ4VeY9cMtNsnlIVbWsUUjjqCq6a8kFFR+LLVR26DTqLMaPkhHBcOx0Uwg4mhOv/xDJumsC4cJtpYW/CPuCuvIL7hkH4gs1CgaKws4HeaTnWQxkrdWGN8JOCsKuOTgnfndarxxEfhad1JyuUyQu7wYBQtLUxZa3XwghYJ5SS8APhWMvx9gtv/wanzAvbWuBOIWQX4GQEaVrCplIPvZH+gsJL9LXAffik2Gw093xIeGd1An4hnEnu+bPQUzefCLMO65Yz5JkwW3dytaubS4Sy1OOWUF5ZX3dW1UKZEfoTo094LoRp5xLdLcIcF4ULi55PVm5R57xwj01CGNJO/X4Ie9Lm/TZgWMZXvyyzQmejluuy3Ygb0iZdrq0c/89PFSaTg3pd88Y3ZaVElZW8d8u+GvQHVkW91jaTzNAAAAAASUVORK5CYII="
+                                />
+                            </svg>
+                        </div>
+
+                        #Ella On Instagram
+                    </div>
+                    <span class="instagram__text">
+                        Phasellus lorem malesuada ligula pulvinar commodo maecenas
+                    </span>
+
+                    <div class="instagram__list">
+                        <button class="prev-btn">
+                            <img src="./assets/images/buttons/prev.png" alt="next" />
+                        </button>
+                        <div class="owl-carousel">
+                            <div class="instagram__item">
+                                <img
+                                    src="./assets/images/social-media-img/image-1.jpg"
+                                    alt="image-1"
+                                />
+                            </div>
+                            <div class="instagram__item">
+                                <img
+                                    src="./assets/images/social-media-img/image-2.jpg"
+                                    alt="image-2"
+                                />
+                            </div>
+                            <div class="instagram__item">
+                                <img
+                                    src="./assets/images/social-media-img/image-3.jpg"
+                                    alt="image-3"
+                                />
+                            </div>
+                            <div class="instagram__item">
+                                <img
+                                    src="./assets/images/social-media-img/image-4.jpg"
+                                    alt="image-4"
+                                />
+                            </div>
+                            <div class="instagram__item">
+                                <img
+                                    src="./assets/images/social-media-img/image-5.jpg"
+                                    alt="image-5"
+                                />
+                            </div>
+                        </div>
+                        <button class="next-btn">
+                            <img src="./assets/images/buttons/next.png" alt="prev" />
+                        </button>
+                    </div>
+
+                    <div class="instagram__btn">
+                        <button class="btn btn-fill">view gallery</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer text-center text-lg-start">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row g-5 g-lg-1">
+                        <div class="col-12 col-lg-7">
+                            <div class="row row g-5 g-lg-1">
+                                <div class="col-12 col-md-4">
+                                    <h3 class="footer__title">shop</h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">New In</li>
+                                        <li class="footer__item">Women</li>
+                                        <li class="footer__item">Men</li>
+                                        <li class="footer__item">Shoes</li>
+                                        <li class="footer__item">Bags & Accessories</li>
+                                        <li class="footer__item">Top Brands</li>
+                                        <li class="footer__item">Sale & Special</li>
+                                        <li class="footer__item">Offers Lookbook</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h3 class="footer__title">infomation</h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">About</li>
+                                        <li class="footer__item">Customer Service</li>
+                                        <li class="footer__item">Reward Program</li>
+                                        <li class="footer__item">Shipping & Returns</li>
+                                        <li class="footer__item">Privacy Policy</li>
+                                        <li class="footer__item">Terms & Conlitions</li>
+                                        <li class="footer__item">Blog</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <h3 class="footer__title">customer service</h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">Search Terms</li>
+                                        <li class="footer__item">Advanced Search</li>
+                                        <li class="footer__item">Orders and Returns</li>
+                                        <li class="footer__item">Contact Us</li>
+                                        <li class="footer__item">Theme FAQs</li>
+                                        <li class="footer__item">Consultant</li>
+                                        <li class="footer__item">Store Locations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="footer__sign-up">
+                                <h3 class="footer__sign-up-title footer__title">
+                                    Newsletter Sign Up
+                                </h3>
+                                <span class="footer__sign-up-text"
+                                    >Sign up for exclusive updates, new arrivals & insider only
+                                    discounts</span
+                                >
+                                <div class="footer__sign-up-form">
+                                    <input type="text" class="footer__sign-up-input" />
+                                    <button class="footer__sign-up-btn">submit</button>
+                                </div>
+                                <ul
+                                    class="footer__social-list d-flex justify-content-center justify-content-lg-start"
+                                >
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img
+                                                src="./assets/images/social-medias/facebook.jpg"
+                                                alt="fb"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img
+                                                src="./assets/images/social-medias/twitter.jpg"
+                                                alt="fb"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img
+                                                src="./assets/images/social-medias/instagram.jpg"
+                                                alt="fb"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img
+                                                src="./assets/images/social-medias/pinterest.jpg"
+                                                alt="fb"
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <img
+                                                src="./assets/images/social-medias/snapchat.jpg"
+                                                alt="fb"
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="grid">
+                        <div class="row g-5 g-md-0">
+                            <div class="col-12 col-md-6">
+                                <div class="footer__text">
+                                    © 2014 Ella Demo. All Rights Reserved. Powered by Shopify.
+                                </div>
+                                <div class="footer__text">Shopify Themes by HaloThemes.com</div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div
+                                    class="footer__credits d-flex justify-content-center justify-content-lg-start"
+                                >
+                                    <img src="./assets/images/credits/credits.png" alt="credits" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/libraries/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="./assets/libraries/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/scripts/main.js"></script>
+</html>

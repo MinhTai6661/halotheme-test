@@ -1,0 +1,23 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Myriad', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../font/font-myriad-pro/MYRIADPRO-REGULAR.OTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}

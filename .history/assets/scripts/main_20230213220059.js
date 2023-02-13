@@ -1,0 +1,30 @@
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 4,
+        nav: true,
+
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+            },
+        },
+    });
+});
+
+const sidebarIcon = document.querySelector('.sidebar__icon');
+const closeBtn = document.querySelector('.sidebar__close');
+const sidebar = document.querySelector('.sidebar');
+
+sidebarIcon.addEventListener('click', () => {
+    sidebar.classList.add('show');
+});
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+});

@@ -1,0 +1,17 @@
+@import "./variable";
+
+
+.btn {
+    font-size: 14px;
+    background-color: $black-color ;
+    border-radius: 1px solid $black-color;
+}
+
+.btn-outline {
+    background-color: transparent;
+}
+
+.btn-fill {
+    background-color: $black-color;
+    color: $text-color-light-1;
+}

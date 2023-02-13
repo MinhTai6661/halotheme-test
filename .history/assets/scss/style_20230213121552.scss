@@ -1,0 +1,52 @@
+@import "./modules/variable";
+
+.header {
+    &__text-slide {}
+
+    &__top {}
+
+    &__top__logo {
+        font-size: 5.8rem;
+        font-size: $font-size-xxl;
+        position: relative;
+        color: $text-color-dark-1;
+        letter-spacing: -5px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 2px;
+            height: 5px;
+            width: 35px;
+            background-color: $text-color-dark-1;
+        }
+    }
+
+    &__top__right {}
+
+    &__top__right-free {
+        color: $text-color-dark-1;
+        font-size: $font-size-sm;
+    }
+
+    &__top__right-nav {
+        display: flex;
+        gap: 25px;
+        color: $text-color-dark-1;
+    }
+
+    &__top__right-link {
+        font-size: $font-size-sm;
+        color: $text-color-dark-1;
+
+    }
+
+    &__top__right-icon {}
+
+    &__top__right-quantity {}
+
+    &__bottom {}
+
+    &__bottom-nav {}
+}

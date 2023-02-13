@@ -1,0 +1,55 @@
+@import "./variable";
+
+
+.btn {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    font-size: 14px;
+    background-color: $black-color ;
+    border-radius: 1px solid $black-color;
+    border-radius: 1px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: $black-color;
+
+    &:hover {
+        color: $text-color-light-1;
+        background-color: $black-color;
+    }
+}
+
+.btn-fill {
+    background-color: $black-color;
+    color: $text-color-light-1;
+
+    &:hover {
+        color: $black-color;
+        background-color: transparent;
+    }
+}
+
+.underline {
+    position: relative;
+    color: red;
+
+    &::after {
+
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        background-color: $text-color-dark-1;
+        border-radius: 1px;
+        height: 5.89px;
+        width: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}

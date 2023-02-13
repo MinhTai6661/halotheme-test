@@ -1,0 +1,148 @@
+@import "./variable";
+
+
+.btn {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    font-size: 14px;
+    background-color: $black-color ;
+    border-radius: 1px solid $black-color;
+    border-radius: 1px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: $black-color;
+
+    &:hover {
+        color: $text-color-light-1;
+        background-color: $black-color;
+    }
+}
+
+.btn-fill {
+    background-color: $black-color;
+    color: $text-color-light-1;
+
+    &:hover {
+        color: $black-color;
+        background-color: transparent;
+    }
+}
+
+.underline {
+    position: relative;
+    transition: 0.5s;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        background-color: currentColor;
+        border-radius: 1px;
+        height: 2px;
+        width: 30px;
+        left: 50%;
+        transition: 0.5s;
+        transform: translateX(-50%);
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+
+
+    &--title {
+        position: relative;
+        color: red;
+        margin-bottom: $spacing-lg;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            background-color: $text-color-dark-1;
+            border-radius: 1px;
+            height: 2px;
+            width: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &-dark {
+        color: $text-color-dark-1;
+    }
+
+    &-light {
+        color: $text-color-light-1;
+    }
+
+    &-sm {
+        font-size: $font-size-md;
+    }
+
+    &-md {
+        font-size: $font-size-l;
+
+    }
+
+    &-lg {
+        font-size: $font-size-xxl
+    }
+}
+
+.pick-color {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $gray-color;
+    border-radius: 100rem;
+    padding: 2px;
+
+    &.black {
+        background-color: $black-color;
+    }
+
+    &.white {
+        background-color: $white-color ;
+    }
+
+    &.red {
+        background-color: $red-color ;
+    }
+
+    &.gray {
+        background-color: $gray-color ;
+    }
+
+    &.cyan {
+        background-color: $cyan-color;
+    }
+
+    &.blue {
+        background-color: $blue-color;
+    }
+
+    &.yellow {
+        background-color: $yellow-color;
+    }
+}

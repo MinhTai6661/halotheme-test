@@ -1,0 +1,27 @@
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 4,
+        nav: true,
+
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+            },
+        },
+    });
+});
+
+const sidebarIcon = document.querySelector('.sidebar__icon');
+const closeBtn = document.querySelector('.sidebar__close');
+sidebarIcon.addEventListener('click', () => {
+    const sidebar = document.querySelector('.sidebar');
+    console.log('sidebarIcon.addEventListener  sidebar', sidebar);
+    sidebar.classList.add('show');
+});

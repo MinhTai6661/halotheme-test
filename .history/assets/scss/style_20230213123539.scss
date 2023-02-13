@@ -1,0 +1,82 @@
+@import "./modules/variable";
+
+.header {
+    &__text-slide {}
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top__logo {
+        font-size: 5.8rem;
+        font-size: $font-size-xxl;
+        position: relative;
+        color: $text-color-dark-1;
+        letter-spacing: -5px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 2px;
+            height: 5px;
+            width: 35px;
+            background-color: $text-color-dark-1;
+        }
+    }
+
+    &__top__right {}
+
+    &__top__right-free {
+        color: $text-color-dark-1;
+        font-size: $font-size-sm;
+        text-align: right;
+        display: block;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__top__right-nav {
+        display: flex;
+        gap: 25px;
+        color: $text-color-dark-1;
+    }
+
+    &__top__right-link {
+        font-size: $font-size-sm;
+        color: $text-color-dark-2;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        column-gap: $spacing-sm;
+    }
+
+    &__top__right-icon {}
+
+    &__top__right-quantity {
+        width: 23px;
+        height: 23px;
+        background-color: $red-color;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__bottom {
+        background-color: $black-color;
+        padding: $spacing-sm 0;
+    }
+
+    &__bottom-nav {
+        display: flex;
+        column-gap: $spacing-md;
+
+    }
+
+    &__bottom-link {
+        color: $text-color-light-1;
+
+    }
+}
